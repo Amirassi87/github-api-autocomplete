@@ -20,7 +20,7 @@ const updateList = debounce(text =>{
         .then(res => res.json())
         .then(data => {
             const card = document.querySelector(".result-list");
-            for(let i=0; i < data.items.length ;i++){
+            for(let i=0; i < 5 ;i++){
                 if(data.items[i].name.toLowerCase().includes(val)){
                     const item = document.createElement("div");
                     const name = document.createElement("a");
